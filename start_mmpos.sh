@@ -120,6 +120,8 @@ cleanup() {
 }
 trap cleanup SIGTERM SIGINT
 
-./release_autorun.sh &
+# The node logs through stderr, but mmpOS only captures stdout — without this
+# redirection its output lands in /dev/null and the miner looks silent.
+./release_autorun.sh 2>&1 &
 RPID=$!
 wait "$RPID"
