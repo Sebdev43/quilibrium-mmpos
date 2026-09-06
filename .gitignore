@@ -5,6 +5,7 @@ build_temp/
 .update.lock
 .backup_pre_update/
 .quil_version
+.frame_cache
 *.log
 # SECRETS / données du nœud — ne jamais publier
 .config/
