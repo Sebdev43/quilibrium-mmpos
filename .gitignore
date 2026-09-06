@@ -1,0 +1,15 @@
+*.tar.gz
+*.sha256
+build_temp/
+.installed_hash
+.update.lock
+.backup_pre_update/
+.quil_version
+*.log
+# SECRETS / données du nœud — ne jamais publier
+.config/
+keys.yml
+config.yml
+node-*
+# doc interne
+SETUP_MMPOS.md
